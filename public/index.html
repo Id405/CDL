@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #72cc60;
+        /* Primary theme text color */
+        --primary-text-color: #fdf4e7;
+        /* Primary theme link color */
+        --primary-link-color: #00909c;
+        /* Secondary color: the background body color */
+        --secondary-color: #0068af;
+        --secondary-text-color: #081b00;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #00d984;
+    }
+</style>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://climatedefenseleaguealaska.org/juice.css">
+    
+    
+</head>
+
+<body>
+    
+
+    <header class="pos-absolute" style="background-color: transparent">
+        
+
+<a href="https:&#x2F;&#x2F;climatedefenseleaguealaska.org&#x2F;">
+    <div class="logo">
+        <img src="https://climatedefenseleaguealaska.org/CDLicon.png" alt="logo">
+        Climate Defense League
+    </div>
+</a>
+
+<nav>
+    
+    
+</nav>
+
+    </header>
+
+    <div class="hero">
+        
+    <section class="text-center">
+        <h1 class="heading-text" style="font-size: 50px">
+            Clear Skies Ahead!
+        </h1>
+        <h3 class="title-text">
+            <b>Climate Defense League</b> is a student organization committed to climate activism and awareness.
+        </h3>
+    </section>
+    <img class="hero-image" style="width: 50%" src="https://climatedefenseleaguealaska.org/CDL.png">
+
+    <div class="explore-more text"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+        Read More
+    </div>
+    <style>
+        .hero section {
+            padding: 0 5rem;
+        }
+        @media screen and (max-width: 768px) {
+            .hero section {
+                padding: 0 2rem;
+            }
+
+            .hero-image {
+                display: none
+            }
+        }
+    </style>
+
+    </div>
+
+    
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://climatedefenseleaguealaska.org/#who-are-we">Who Are We?</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://climatedefenseleaguealaska.org/#projects">Projects</a>
+                </div>
+                
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="https://climatedefenseleaguealaska.org/#recycling"><small>- Recycling</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="https://climatedefenseleaguealaska.org/#outreach"><small>- Outreach</small></a>
+                </div>
+                
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://climatedefenseleaguealaska.org/#get-involved">Get Involved!</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+            <div id="features" class="heading-text">Overview</div>
+            <p>More information to come soon!</p>
+<h1 id="who-are-we">Who Are We?</h1>
+<p>Climate Defense League is a student organization located at West Valley High School promoting climate sustainability, awareness, and action. We believe that it's never too little or too late to save the environment, and that everyone can make a difference.</p>
+<h1 id="projects">Projects</h1>
+<h2 id="recycling">Recycling</h2>
+<p>Climate Defense League has taken the responsibility for paper recycling at West Valley High School, collecting it once a week, and transporting it to a local recycling center.</p>
+<h2 id="outreach">Outreach</h2>
+<p>Information to come soon...</p>
+<h1 id="get-involved">Get Involved!</h1>
+<p>If you are a West Valley High School student, we'd love to see you at our regular meetings. Meetings are every Tuesday, during lunch in Ms. Galloway's room, room 115.</p>
+
+            
+        </div>
+
+        
+        
+    </main>
+
+    
+
+
+</body>
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>

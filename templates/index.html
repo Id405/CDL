@@ -1,0 +1,35 @@
+{% extends "juice/templates/index.html" %}
+{% block hero %}
+    <section class="text-center">
+        <h1 class="heading-text" style="font-size: 50px">
+            Clear Skies Ahead!
+        </h1>
+        <h3 class="title-text">
+            <b>Climate Defense League</b> is a student organization committed to climate activism and awareness.
+        </h3>
+    </section>
+    <img class="hero-image" style="width: 50%" src="{{ get_url(path="CDL.png") }}">
+
+    <div class="explore-more text"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+        Read More
+    </div>
+    <style>
+        .hero section {
+            padding: 0 5rem;
+        }
+        @media screen and (max-width: 768px) {
+            .hero section {
+                padding: 0 2rem;
+            }
+
+            .hero-image {
+                display: none
+            }
+        }
+    </style>
+{% endblock hero %}
+
+{% block footer %}
+
+{% endblock footer %}
