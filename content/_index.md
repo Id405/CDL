@@ -14,7 +14,7 @@ Climate Defense League is a student organization located at West Valley High Sch
 
 ## Recycling
 
-Climate Defense League has taken the responsibility for paper recycling at West Valley High School, collecting it once a week, and transporting it to a local recycling center.
+The Recycling committee is a group of CDL members who are dedicated to establishing a recycling program inside local schools. Currently, they are working with West Valley High School to set up paper recycling bins in every classroom. They are responsible for the management of these bins by taking them out weekly to the recycling center. Their future goal is to establish a uniform and lasting recycling program throughout all Fairbanks schools.
 
 ## Outreach
 
