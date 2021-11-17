@@ -1,4 +1,9 @@
 {% extends "juice/templates/index.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+{% endblock head %}
+
 {% block hero %}
     <section class="text-center">
         <h1 class="heading-text" style="font-size: 50px">
@@ -31,5 +36,4 @@
 {% endblock hero %}
 
 {% block footer %}
-
 {% endblock footer %}

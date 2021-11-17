@@ -1,10 +1,8 @@
 +++
 title = "Info"
-description = "Hello World"
+description = ""
 weight = 2
 +++
-
-More information to come soon!
 
 # Who Are We?
 
@@ -18,7 +16,7 @@ The Recycling committee is a group of CDL members who are dedicated to establish
 
 ## Outreach
 
-Information to come soon...
+CDL Public Outreach is committed to educating students and the public about local and global climate change and what actions they can take to make an impact as well as connecting CDL to the community. Public outreach is currently working on setting up an educational billboard at West Valley to announce current CDL projects, post information, and encourage students to do their part for their climate. Future goals include writing letters to local and national leaders expressing West Valley students' support and encouraging leaders to push for climate action. 
 
 # Get Involved!
 

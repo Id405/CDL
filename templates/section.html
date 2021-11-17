@@ -1,0 +1,52 @@
+{% extends "juice/templates/index.html" %}
+{% import "_macros.html" as macros %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+{% endblock head %}
+
+{% block title %}{{ section.title }} | {{ super() }} {% endblock title %}
+
+{% block header %}
+<header class="box-shadow">
+    {{ macros::render_header() }}
+</header>
+{% endblock header %}
+
+{% block toc %}
+        <div class="toc">
+            <div class="toc-sticky">
+                <div class = "toc-header">
+                    <h1>Blog Posts</h1>
+                </div>
+                {% for h in section.pages %}
+                    <div class="toc-item">
+                        <a class="subtext" href="{{h.permalink | safe}}">
+                            {{ h.title }}
+                        </a>
+                        {% if h.date %}
+                        <div class="toc-item-date">
+                            <small> {{ h.date }}</small>
+                        </div>
+                    {% endif %}
+                    </div>
+                    <!-- {% if h.toc %}
+                        {% for h2 in h.toc %}
+                        <div class="toc-item-child">
+                            <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
+                        </div>
+                        {% endfor %}
+                    {% endif %} -->
+                {% endfor %}
+            </div>
+        </div>
+{% endblock toc %}
+
+{% block content %}
+    {% for post in section.pages %}
+        {{ macros::render_post(post=post) }}
+    {% endfor %}
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

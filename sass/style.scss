@@ -1,0 +1,34 @@
+.toc {
+    .toc-sticky {
+        .toc-header {
+            h1 {
+                color: var(--secondary-text-color);
+            }
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    align-self: normal;
+
+    .post {
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        .heading-text {
+            a {
+                color: var(--primary-text-color);
+            }
+        }
+
+        .heading-subtext {
+            font-family: "Fira Sans", sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 8px 0 0px 0;
+            color: var(--primary-text-color);
+            text-align: center;
+        }
+    }
+}

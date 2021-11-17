@@ -10,6 +10,9 @@ build_search_index = false
 # Set theme to juice
 theme = "juice"
 
+title = "CDL Alaska"
+description = "Climate Defense League is a West Valley High School student organization committed to climate activism and awareness."
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -18,4 +21,7 @@ highlight_code = false
 [extra]
 juice_logo_name = "Climate Defense League"
 juice_logo_path = "CDLicon.png"
+juice_extra_menu = [
+    { title = "Blog", link = "/blog" }
+]
 repository_url = ""
