@@ -20,4 +20,4 @@ CDL Public Outreach is committed to educating students and the public about loca
 
 # Get Involved!
 
-If you are a West Valley High School student, we'd love to see you at our regular meetings. Meetings are every Tuesday, during lunch in Ms. Galloway's room, room 115.
+If you are a West Valley High School student, we'd love to see you at our regular meetings. Meetings are every Monday and Tuesday, during lunch in Ms. Galloway's room, room 115.
