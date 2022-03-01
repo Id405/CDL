@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Info | CDL Alaska </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #72cc60;
+        /* Primary theme text color */
+        --primary-text-color: #fdf4e7;
+        /* Primary theme link color */
+        --primary-link-color: #72cc60;
+        /* Secondary color: the background body color */
+        --secondary-color: #0068af;
+        --secondary-text-color: #081b00;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #00d984;
+    }
+</style>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://climatedefenseleaguealaska.org/juice.css">
+    
+<link rel="stylesheet" href="https://climatedefenseleaguealaska.org/style.css">
+
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="https:&#x2F;&#x2F;climatedefenseleaguealaska.org&#x2F;">
+    <div class="logo">
+        <img src="https://climatedefenseleaguealaska.org/CDLicon.png" alt="logo">
+        Climate Defense League
+    </div>
+</a>
+
+<nav>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="&#x2F;blog">Blog</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                <div class = "toc-header">
+                    <h1>Blog Posts</h1>
+                </div>
+                
+                    <div class="toc-item">
+                        <a class="subtext" href="https://climatedefenseleaguealaska.org/blog/artsfortheclimate/">
+                            Arts for the Climate Competition
+                        </a>
+                        
+                        <div class="toc-item-date">
+                            <small> 2022-03-01</small>
+                        </div>
+                    
+                    </div>
+                    <!--  -->
+                
+            </div>
+        </div>
+
+
+        <div class="content text">
+            
+    
+        
+<div class="post">
+    <div class="heading-text">
+        <a href="https:&#x2F;&#x2F;climatedefenseleaguealaska.org&#x2F;blog&#x2F;artsfortheclimate&#x2F;">Climate Defense League Arts for the Climate Competition</a>
+        
+        
+            <div class="heading-subtext">2022-03-01</div>
+        
+    </div>
+    <p>The Climate Defense League is hosting ‘Arts for the Climate’, an art show and competition on Friday with art inspired by 3 categories:</p>
+<ul>
+<li>Climate change</li>
+<li>The environment and ecosystems of Alaska</li>
+<li>Recycling and waste</li>
+</ul>
+<p>The show will be on Friday, March 25, from 5:00 to 7:00 pm, open to the public, and take place in the West Valley High School library where all submissions will be on display. It will also be open to students and faculty memebers for the full school day of March 25. Guests will have the opportunity to vote on their favorite pieces in each category, aswell as overall. The pieces with the most votes in each category, aswell as overall with recieve prizes.</p>
+<p>The art show is an opportunity to see the enthusiasm held by West Valley Students for climate activism. The art show will have food and drinks available for free, so make sure to not miss this opportunity to experience the talent of the artists of West Valley.</p>
+
+</div>
+
+    
+
+        </div>
+
+        
+        
+    </main>
+
+    
+
+</body>
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>
